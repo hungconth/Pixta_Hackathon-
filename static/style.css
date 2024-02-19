@@ -1,0 +1,74 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border: 2px solid #ff0000;
+}
+
+#camera-frame {
+  width: 640px; /* Adjust based on actual camera resolution */
+  height: 480px; /* Adjust based on actual camera resolution */
+  margin-right: 20px;
+  background-color: #fff;
+  border: 2px solid #ff0000;
+  position: relative;
+}
+
+#camera-stream {
+  width: 100%;
+  height: 100%;
+}
+
+.control-panel {
+  width: 350px; /* Increase width for wider red frame */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inference-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #ff0000;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 2px solid #ff0000;
+}
+
+#inference-btn:hover {
+  background-color: #e60000;
+}
+
+.info-box {
+  width: 100%; /* Take the full width of the control panel */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #fff;
+  border: 2px solid #ff0000;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px; /* Add some padding inside the box */
+}
+
+#results img {
+  max-width: 100%; /* Ensure image does not overflow the box */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure image fits within its box without stretching */
+  margin-bottom: 10px; /* Space between image and text */
+}

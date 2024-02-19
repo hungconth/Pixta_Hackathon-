@@ -1,0 +1,6 @@
+[submodule "MiVOLO"]
+	path = MiVOLO
+	url = https://github.com/WildChlamydia/MiVOLO
+[submodule "MiVOLO-Age-Estimation"]
+	path = MiVOLO-Age-Estimation
+	url = https://github.com/WildChlamydia/MiVOLO

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Recommendation System</title>
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="camera-frame">
+        <video id="camera-stream" autoplay></video>
+        <canvas id="capture-canvas" style="display: none"></canvas>
+      </div>
+      <div class="control-panel">
+        <button id="inference-btn">START</button>
+        <div class="info-box">
+          <div id="results">
+            <!-- Inference results will be displayed here -->
+          </div>
+          <div id="recommendations">
+            <!-- Recommendations will be displayed here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+  </body>
+</html>
